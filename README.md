@@ -54,9 +54,37 @@ Types of casing:
  - **Syntax**: `dataType[] variable_Name;`
  - To print arrays using `println()`, the array is converted to a string.
  - The conversion requires built-in `util`library to be imported as follows: `import java.util.Arrays;`
-### Boolean/Logical Operator
+### Boolean Operator
 - Used to determine logic between variables or values.
     - Equal to -> `==` -> Returns true when both statements are equal.
     - Logical NOT -> `!=` -> returns true id statements are not equal.
+### Comparison Operator
+- Compares two values or variables. When comparing strings or objects use the `.equals()` method. 
+    - Equal to -> `==`
+    - Not Equal -> `!=`
+    - Greater than -> `>`
+    - Less than -> `<`
+    - Greater than or equal to -> `>=`
+    - Less than or equal to -> `<=`
+### Logical Operators
+- They evaluate the logic between variables or values
+    - Logical AND -> `&&` Returns true if both statements are true.
+    - Logical OR -> `||` Returns true if one of the statements is true.
+    - Logical NOT -> `!` Reverses the results. Returns false if the result is true.
+### Arithmetic Operators
+- Perform Mathematical operations
+  - Addition -> `+`
+  - Subtraction -> `-`
+  - Multiplication -> `*`
+  - Division -> `/`
+  - Modulus -> `%` Returns the division remainder
+  - increment -> `++`
+  - Decrement -> `--`
+### Operatore Precedence
+- Order of operations when there is multiple operators.
+- Oder from highest to lowest priority
+Paranthesis`()` -> `*` -> `\` -> `%` -> `+` -> `-` -> `>` -> `<` -> `>=` -> `<=` -> `==` -> `!=` -> `&&` -> `||` -> `=`
+
+
       
  
