@@ -54,4 +54,9 @@ Types of casing:
  - **Syntax**: `dataType[] variable_Name;`
  - To print arrays using `println()`, the array is converted to a string.
  - The conversion requires built-in `util`library to be imported as follows: `import java.util.Arrays;`
+### Boolean/Logical Operator
+- Used to determine logic between variables or values.
+    - Equal to -> `==` -> Returns true when both statements are equal.
+    - Logical NOT -> `!=` -> returns true id statements are not equal.
+      
  
