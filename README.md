@@ -94,6 +94,15 @@ Comparison operators are used to check for conditions.
 Syntax: `if(condition) {
 ... block ofcode...}`
 - If without braces only executes the first line after the if statement. 
+### While Loop
+- The while loop requires a condition and repeats while the condition is true.
+- The condition is validated before the entering loop.
+- Syntax -> `while(condition){..statement..}`
+- A while loop must have a break point to avoid having infinite loops to avoid system crash.
+### Do while Loop
+- Used in instances where loop is executed once before checking the condition. 
+- For instance when connecting to a database once and if it fails the connection program is run again.
+- Syntax: `do{..statement..} while(condition);`
 
 
       
