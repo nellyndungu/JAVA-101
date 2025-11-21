@@ -83,7 +83,17 @@ Types of casing:
 ### Operatore Precedence
 - Order of operations when there is multiple operators.
 - Oder from highest to lowest priority
-Paranthesis`()` -> `*` -> `\` -> `%` -> `+` -> `-` -> `>` -> `<` -> `>=` -> `<=` -> `==` -> `!=` -> `&&` -> `||` -> `=`
+Parenthesis`()` -> `*` -> `\` -> `%` -> `+` -> `-` -> `>` -> `<` -> `>=` -> `<=` -> `==` -> `!=` -> `&&` -> `||` -> `=`
+### Java Strings
+- Store text surrounded by double quotes.
+- String Length
+  - Length of string is found using -> `length()`.
+### If...Else
+`if` statements need condition that result to either true or false.
+Comparison operators are used to check for conditions. 
+Syntax: `if(condition) {
+... block ofcode...}`
+- If without braces only executes the first line after the if statement. 
 
 
       
