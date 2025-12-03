@@ -23,21 +23,21 @@ Basics of Java Programming.
 - One-line comment syntax -> `// comment`
 - Multiple lines comment syntax -> `/* comment */`
 ### Variable Definition
-- String - stores text sorrounded by double quotes.
+- String - stores text surrounded by double quotes.
 - int - stores whole numbers.
 - float - stores decimal point numbers.
 - char - stores single character wrapped in single quote.
 - boolean - stores True/False states.
-- final - used to define variabbles whose value remains constant and can't be changed within the program.
+- final - used to define variables whose value remains constant and can't be changed within the program.
 ### Data Types
-- Primitive Data Types - Specifies type of variable and kind of vaues it can hold.
+- Primitive Data Types - Specifies type of variable and kind of values it can hold.
     - byte - represent 8-bit whole numbers (-128 to 127)
     - short - represent 16-bit whole numbers (-32768 to 32767)
-    - char - represent one character and unicode character values.
+    - char - represent one character and Unicode character values.
     - int - represent 32-bit whole numbers.
     - long - represents 64-bit whole numbers. 
     - float - represents 32-bit decimal values. The values ends with 'f' eg `float num = 4l`;
-    - double - represents 64-bit decimal values. The values ends with 'd' eg `double num = 4d`;
+    - double - represents 64-bit decimal values. The values end with 'd' eg `double num = 4d`;
 - Non-primitive Data Types - data types that refer to objects. They include class, array, String.
 - `var` - Introduced in Java 10, allows java to automatically detect data type. Can be used when handling complex data types to make code shorter and easy to read
 ### Java Type Casting
@@ -50,10 +50,25 @@ Types of casing:
     - **Syntax**: `largeType variable_Name = (smallerType) newVariable_Name;`
  ### Arrays
  - Store multiple values in a single variable.
+ - Fixed size that is set when declared and remains static throughout the program.
+ - It stores objects and primitives. 
+ - They cannot store non-primitive types directly
  - The array variables are defined using square brackets `[]`.
  - **Syntax**: `dataType[] variable_Name;`
+ - Individual elements are accessed using index e.g., `myArray[0]` for first element. 
  - To print arrays using `println()`, the array is converted to a string.
  - The conversion requires built-in `util`library to be imported as follows: `import java.util.Arrays;`
+### ArrayList
+- A class with resizable size and the size doesn't need to be set at declaration. 
+- Stores objects only. 
+- To use ArrayList, import java.util.
+- ArrayList are modified using methods such as:
+  - `add()` - adding elements. Position can be specified using index.
+  - `get(index)` - get the specified element. 
+  - `set(index, value)` - modify an existing element.
+  - `remove(index)` - Delete an element. 
+  - `clear()` - Clear all elements in the array
+  - `size()` - get the number of elements in the array. 
 ### Boolean Operator
 - Used to determine logic between variables or values.
     - Equal to -> `==` -> Returns true when both statements are equal.
@@ -80,7 +95,7 @@ Types of casing:
   - Modulus -> `%` Returns the division remainder
   - increment -> `++`
   - Decrement -> `--`
-### Operatore Precedence
+### Operators Precedence
 - Order of operations when there is multiple operators.
 - Oder from highest to lowest priority
 Parenthesis`()` -> `*` -> `\` -> `%` -> `+` -> `-` -> `>` -> `<` -> `>=` -> `<=` -> `==` -> `!=` -> `&&` -> `||` -> `=`
@@ -103,7 +118,23 @@ Syntax: `if(condition) {
 - Used in instances where loop is executed once before checking the condition. 
 - For instance when connecting to a database once and if it fails the connection program is run again.
 - Syntax: `do{..statement..} while(condition);`
+### Iterators
+These are part of Java collection framework, and they can loop through collection classes.
+Declaration of Iterators: `Iterator<type> variableName = variableName.iterator()`
+- Methods: 
+    - `next()` -> Returns the first element in an array. 
+    - `hasNext()` -> Returns a boolean value as it iterates through all elements in an array.
+    - `remove()`-> Removes the elements from an array. Position of element is specified using index. 
 
+### Map Interface
+Map interface is used to store a pair containing a key and its value. The key
+is used to get the value.The map interface consists of the  following classes: HashMap, TreeMap and LinkedHashMap. 
+These classes use the following methods:
+- `put()` -> For adding elements into the object.
+- `get()` -> To access an element in the object.
+- `remove()` -> To remove an element in the object.
 
-      
- 
+### HashSet
+The hashset class stores elements in containers. It uses similar methods as the hashmaps and has an additional
+element for checking existence of an element:
+- `contains()` -> Returns a boolean value true when the element exists in the object.

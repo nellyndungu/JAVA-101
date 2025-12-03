@@ -3,15 +3,20 @@ public class arraysData{
 
         // Storing multiple values in one variable
         int [] grades = {87, 79, 90, 65, 78, 65};
+        String[] student = {"John", "Isaac", "Cynthia", "Matthew", "June", "Mary"};
 
         // Convert array to string
         String gradesArray = java.util.Arrays.toString(grades);
 
 
         System.out.printf("Grades: %s", gradesArray);
+
         // Print using index
-        System.out.printf("\nHighest grade: %s", grades[2]);
+        System.out.printf("\nHighest grade: %s \n", grades[2]);
 
-
+        // Print name and grade
+        for(int i = 0; i < grades.length; i++){
+            System.out.println(student[i] + ":" + grades[i]);
+        }
     }
 }
